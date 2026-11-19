@@ -1,0 +1,14 @@
+{
+  "name": "claudemd-init",
+  "description": "Write a CLAUDE.md from what is in the repo",
+  "owner": { "name": "varun642002" },
+  "plugins": [
+    {
+      "name": "claudemd-init",
+      "description": "Writes a CLAUDE.md from what is actually in the repository: languages, stack, scripts, entry points, layout, conventions, env vars and git habits. States only what it observed.",
+      "version": "1.0.0",
+      "source": "./",
+      "license": "MIT"
+    }
+  ]
+}

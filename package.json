@@ -1,0 +1,17 @@
+{
+  "name": "@varun642002/claudemd-init",
+  "version": "1.0.0",
+  "description": "Writes a CLAUDE.md from what is actually in the repository. States only what it observed, with evidence for every claim.",
+  "type": "module",
+  "license": "MIT",
+  "author": "varun642002",
+  "bin": { "claudemd-init": "bin/claudemd-init.mjs" },
+  "homepage": "https://github.com/varun642002/claudemd-init",
+  "repository": { "type": "git", "url": "https://github.com/varun642002/claudemd-init.git" },
+  "bugs": { "url": "https://github.com/varun642002/claudemd-init/issues" },
+  "engines": { "node": ">=18" },
+  "scripts": { "test": "node test/smoke.mjs" },
+  "keywords": ["claude", "claude-code", "claude-md", "onboarding", "documentation", "context", "cli", "plugin"],
+  "files": ["bin", "lib", "commands", ".claude-plugin", "README.md", "LICENSE"],
+  "dependencies": {}
+}

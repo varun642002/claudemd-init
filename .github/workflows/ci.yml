@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        node: [18, 20, 22]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+      - name: Syntax
+        shell: bash
+        run: for f in lib/*.mjs bin/*.mjs test/*.mjs; do node --check "$f"; done
+      - name: Manifests are valid JSON
+        shell: bash
+        run: |
+          for f in .claude-plugin/plugin.json .claude-plugin/marketplace.json package.json; do
+            node -e "JSON.parse(require('fs').readFileSync('$f','utf8'))"
+          done
+      - name: Tests
+        run: node test/smoke.mjs
+      - name: It can describe itself
+        run: node bin/claudemd-init.mjs
+      - name: It writes nothing without --write
+        shell: bash
+        run: |
+          node bin/claudemd-init.mjs > /dev/null
+          test ! -f CLAUDE.md
