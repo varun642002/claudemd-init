@@ -29,7 +29,7 @@ ignored — it gets believed.
 ## ✨ What it does
 
 ```bash
-npx @varun642002/claudemd-init
+npx github:varun642002/claudemd-init
 ```
 
 Reads the tree and prints a draft:
@@ -63,7 +63,7 @@ Reads the tree and prints a draft:
 Then write it:
 
 ```bash
-npx @varun642002/claudemd-init --write
+npx github:varun642002/claudemd-init --write
 ```
 
 🔒 Runs entirely locally.
@@ -98,7 +98,7 @@ existing `CLAUDE.md` first and keeping the human-written rules in it.
 Or just use the CLI, with no install:
 
 ```bash
-npx @varun642002/claudemd-init
+npx github:varun642002/claudemd-init
 ```
 
 ## 🔍 What it detects
