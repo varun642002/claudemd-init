@@ -2,6 +2,18 @@
   "name": "claudemd-init",
   "description": "Writes a CLAUDE.md from what is actually in the repository: languages, stack, scripts, entry points, layout, conventions, env vars and git habits. States only what it observed.",
   "version": "1.0.0",
-  "keywords": ["claude-md", "onboarding", "documentation", "context", "claude-code"],
-  "license": "MIT"
+  "keywords": [
+    "claude-md",
+    "onboarding",
+    "documentation",
+    "context",
+    "claude-code"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Varun S.",
+    "url": "https://github.com/varun642002"
+  },
+  "homepage": "https://github.com/varun642002/claudemd-init",
+  "icon": "./.claude-plugin/icon.png"
 }

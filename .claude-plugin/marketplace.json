@@ -1,14 +1,21 @@
 {
   "name": "claudemd-init",
   "description": "Write a CLAUDE.md from what is in the repo",
-  "owner": { "name": "varun642002" },
+  "owner": {
+    "name": "varun642002"
+  },
   "plugins": [
     {
       "name": "claudemd-init",
       "description": "Writes a CLAUDE.md from what is actually in the repository: languages, stack, scripts, entry points, layout, conventions, env vars and git habits. States only what it observed.",
       "version": "1.0.0",
       "source": "./",
-      "license": "MIT"
+      "license": "MIT",
+      "author": {
+        "name": "Varun S.",
+        "url": "https://github.com/varun642002"
+      },
+      "homepage": "https://github.com/varun642002/claudemd-init"
     }
   ]
 }
